@@ -1,15 +1,14 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        MyList<Integer> listInteger = new MyList<Integer>();
-        listInteger.add(1);
-        listInteger.add(2);
-        listInteger.add(3);
-        listInteger.add(3);
-        listInteger.add(4);
-
-        System.out.println("element 4: "+listInteger.get(4));
-        System.out.println("element 1: "+listInteger.get(1));
-        System.out.println("element 2: "+listInteger.get(2));
-        System.out.println("element 3: "+listInteger.get(3));
+        MyList<Integer> myList = new MyList<>();
+        ArrayList arrayList = new ArrayList();
+        arrayList.add(13);
+        arrayList.add(15);
+        myList.add(13);
+        System.out.println(myList);
+        System.out.println(arrayList);
+        arrayList.add(16);
     }
 }
